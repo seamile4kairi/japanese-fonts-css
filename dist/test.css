@@ -36,3 +36,34 @@ html{
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
+body{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  box-sizing:border-box;
+  padding:0 1rem;
+}
+@media (min-width:60rem){
+  body{
+    flex-wrap:nowrap;
+  }
+}
+section[data-jp-fonts]{
+  flex-grow:1;
+  flex-basis:40rem;
+  padding:0 1rem;
+}
+@media (min-width:40rem){
+  section[data-jp-fonts]{
+    flex-grow:0;
+  }
+}
+[data-jp-fonts=sans-serif]{
+  font-family:-apple-system,system,游ゴシック,Yu Gothic,YuGothic,Helvetica Neue,ヒラギノ角ゴ ProN W3,Hiragino Kaku Gothic ProN,HiraKakuProN-W3,Noto Sans CJK JP,Noto Sans Japanese,sans-serif;
+}
+[data-jp-fonts=serif]{
+  font-family:游明朝,Yu Mincho,YuMincho,Garamond,ヒラギノ明朝 ProN W3,Hiragino Mincho ProN,HiraMinProN-W3,Noto Serif,serif;
+}
+[data-jp-fonts=monospace]{
+  font-family:Monaco,Osaka,Noto Sans Mono CJK JP,Noto Sans Mono Japanese,monospace;
+}

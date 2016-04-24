@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  input:  'src/japanese-fonts.css',
+  input:  'src/*.css',
   dir:    'dist',
   use:    [
     'stylelint',
