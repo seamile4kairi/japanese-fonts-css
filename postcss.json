@@ -1,0 +1,16 @@
+{
+  "input": "src/japanese-fonts.css",
+  "dir": "dist",
+  "use": [
+    "stylelint",
+    "postcss-import",
+    "postcss-import-url",
+    "postcss-custom-properties"
+  ],
+  "postcss-import": {
+    "plugins": ["stylelint"]
+  },
+  "postcss-custom-properties": {
+    "preserve": true
+  }
+}

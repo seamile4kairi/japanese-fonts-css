@@ -4,10 +4,11 @@
   "description": "The CSS configurations for Japanese device/web fonts",
   "author": "Kairi",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/japanese-fonts.css",
   "style": "dist/japanese-fonts.css",
   "scripts": {
-    "test": "mocha"
+    "build": "postcss -c postcss.json",
+    "test": "npm run build && stylelint dist/japanese-fonts.css"
   },
   "keywords": [
     "css",
@@ -16,4 +17,15 @@
     "Japan",
     "Japanese"
   ],
+  "devDependencies": {
+    "postcss-cli": "^2.5.2",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-import": "^8.1.0",
+    "postcss-import-url": "^1.0.0",
+    "stylelint": "^6.1.1",
+    "stylelint-config-standard": "^6.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  }
 }
