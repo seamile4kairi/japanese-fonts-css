@@ -7,7 +7,7 @@
   "main": "dist/japanese-fonts.css",
   "style": "dist/japanese-fonts.css",
   "scripts": {
-    "build": "postcss -c postcss.json",
+    "build": "postcss -c postcss.config.js",
     "test": "npm run build && stylelint dist/japanese-fonts.css"
   },
   "keywords": [
@@ -18,10 +18,12 @@
     "Japanese"
   ],
   "devDependencies": {
+    "cssnano": "^3.5.2",
     "postcss-cli": "^2.5.2",
     "postcss-custom-properties": "^5.0.1",
     "postcss-import": "^8.1.0",
     "postcss-import-url": "^1.0.0",
+    "postcss-reporter": "^1.3.3",
     "stylelint": "^6.1.1",
     "stylelint-config-standard": "^6.0.0"
   },
