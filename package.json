@@ -1,0 +1,19 @@
+{
+  "name": "japanese-fonts-css",
+  "version": "0.0.1",
+  "description": "The CSS configurations for Japanese device/web fonts",
+  "author": "Kairi",
+  "license": "MIT",
+  "main": "index.js",
+  "style": "dist/japanese-fonts.css",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "css",
+    "font",
+    "typography",
+    "Japan",
+    "Japanese"
+  ],
+}
