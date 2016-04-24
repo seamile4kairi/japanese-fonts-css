@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+:root {
+  --font-apple-mono:  Monaco, Osaka;
+  --font-google-mono: 'Noto Sans Mono CJK JP', 'Noto Sans Mono Japanese';
+
+  --jp-monospace:     var(--font-apple-mono),
+                      var(--font-google-mono),
+                      monospace;
+}
