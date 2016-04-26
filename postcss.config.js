@@ -13,6 +13,10 @@ module.exports = {
   ],
   'postcss-import': {
     plugins: [
+      require('postcss-copy')({
+        src:  './src',
+        dest: './dist/assets'
+      }),
       require('stylelint')
     ]
   },
