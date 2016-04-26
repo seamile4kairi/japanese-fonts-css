@@ -34,6 +34,9 @@
     "watch": "^0.17.1"
   },
   "stylelint": {
-    "extends": "stylelint-config-standard"
+    "rules": {
+      "font-family-name-quotes": "single-where-recommended",
+      "font-weight-notation": "numeric"
+    }
   }
 }
