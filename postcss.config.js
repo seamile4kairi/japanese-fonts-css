@@ -7,7 +7,8 @@ module.exports = {
     'postcss-import',
     'postcss-import-url',
     'postcss-custom-properties',
-    'cssnano',
+    'postcss-normalize-charset',
+    'autoprefixer',
     'postcss-reporter'
   ],
   'postcss-import': {
@@ -15,22 +16,13 @@ module.exports = {
       require('stylelint')
     ]
   },
-  'postcss-url': {
-    url: 'inline'
-  },
   'postcss-custom-properties': {
     preserve: true
   },
-  cssnano: {
-    autoprefixer: {
-      browsers: [
-        '> 1% in JP'
-      ]
-    },
-    core: (process.env.NODE_ENV === 'production'),
-    discardComments: {
-      remove: (comment) => { return !(process.env.NODE_ENV === 'production'); }
-    }
+  autoprefixer: {
+    browsers: [
+      '> 1% in JP'
+    ]
   },
   'postcss-reporter': {
     clearMessages: true
