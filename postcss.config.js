@@ -4,7 +4,6 @@ module.exports = {
   input:  'src/*.css',
   dir:    'dist',
   use:    [
-    'stylelint',
     'postcss-import',
     'postcss-import-url',
     'postcss-custom-properties',
