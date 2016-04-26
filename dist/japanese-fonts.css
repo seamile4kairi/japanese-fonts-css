@@ -1,38 +1,157 @@
 
-@charset 'utf-8';@font-face{font-family:Noto Sans Japanese;font-style:normal;font-weight:100;src:url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.otf) format('opentype');}@font-face{font-family:Noto Sans Japanese;font-style:normal;font-weight:200;src:url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.otf) format('opentype');}@font-face{font-family:Noto Sans Japanese;font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff) format('woff'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf) format('opentype');}@font-face{font-family:Noto Sans Japanese;font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf) format('opentype');}@font-face{font-family:Noto Sans Japanese;font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.otf) format('opentype');}@font-face{font-family:Noto Sans Japanese;font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');}@font-face{font-family:Noto Sans Japanese;font-style:normal;font-weight:900;src:url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.otf) format('opentype');}
-@font-face{font-family:Noto Serif;font-style:normal;font-weight:400;src:local('Noto Serif'),local('NotoSerif'),url(https://fonts.gstatic.com/s/notoserif/v4/eCpfeMZI7q4jLksXVRWPQy3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');}
-@font-face{font-family:Noto Serif;font-style:normal;font-weight:700;src:local('Noto Serif Bold'),local('NotoSerif-Bold'),url(https://fonts.gstatic.com/s/notoserif/v4/lJAvZoKA5NttpPc9yc6lPfEr6Hm6RMS0v1dtXsGir4g.ttf) format('truetype');}
-:root{
-  --font-system:-apple-system,system;
-  --font-yu-gothic:'游ゴシック','Yu Gothic',YuGothic;
-  --font-apple-sans:'Helvetica Neue','ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','HiraKakuProN-W3';
-  --font-google-sans:'Noto Sans CJK JP','Noto Sans Japanese';
-
-  --jp-sans-serif:-apple-system,system,'游ゴシック','Yu Gothic',YuGothic,'Helvetica Neue','ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','HiraKakuProN-W3','Noto Sans CJK JP','Noto Sans Japanese',sans-serif;
-
-  --jp-sans-serif:var(--font-system),var(--font-yu-gothic),var(--font-apple-sans),var(--font-google-sans),sans-serif;
-
-  --font-yu-mincho:'游明朝','Yu Mincho',YuMincho;
-
-  --font-apple-serif:Garamond,'ヒラギノ明朝 ProN W3','Hiragino Mincho ProN','HiraMinProN-W3';
-
-  --font-google-serif:'Noto Serif';
-
-  --jp-serif:'游明朝','Yu Mincho',YuMincho,Garamond,'ヒラギノ明朝 ProN W3','Hiragino Mincho ProN','HiraMinProN-W3','Noto Serif',serif;
-
-  --jp-serif:var(--font-yu-mincho),var(--font-apple-serif),var(--font-google-serif),serif;
-
-  --font-apple-mono:Monaco,Osaka;
-
-  --font-google-mono:'Noto Sans Mono CJK JP','Noto Sans Mono Japanese';
-
-  --jp-monospace:Monaco,Osaka,'Noto Sans Mono CJK JP','Noto Sans Mono Japanese',monospace;
-
-  --jp-monospace:var(--font-apple-mono),var(--font-google-mono),monospace;
+@charset 'utf-8';
+/*
+* Noto Sans Japanese (japanese) http://www.google.com/fonts/earlyaccess
+ */
+@font-face{
+  font-family:      'Noto Sans Japanese';
+  font-style:      normal;
+  font-weight:      100;
+  src:      url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.otf) format('opentype');
 }
-html{
-  font-weight:400;
-  text-rendering:optimizeLegibility;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+@font-face{
+  font-family:      'Noto Sans Japanese';
+  font-style:      normal;
+  font-weight:      200;
+  src:      url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.otf) format('opentype');
+}
+@font-face{
+  font-family:      'Noto Sans Japanese';
+  font-style:      normal;
+  font-weight:      300;
+  src:      url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf) format('opentype');
+}
+@font-face{
+  font-family:      'Noto Sans Japanese';
+  font-style:      normal;
+  font-weight:      400;
+  src:      url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf) format('opentype');
+}
+@font-face{
+  font-family:      'Noto Sans Japanese';
+  font-style:      normal;
+  font-weight:      500;
+  src:      url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.otf) format('opentype');
+}
+@font-face{
+  font-family:      'Noto Sans Japanese';
+  font-style:      normal;
+  font-weight:      700;
+  src:      url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');
+}
+@font-face{
+  font-family:      'Noto Sans Japanese';
+  font-style:      normal;
+  font-weight:      900;
+  src:      url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.otf) format('opentype');
+}
+@font-face{
+  font-family:      'Noto Serif';
+  font-style:      normal;
+  font-weight:      400;
+  src:      local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v4/eCpfeMZI7q4jLksXVRWPQy3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face{
+  font-family:      'Noto Serif';
+  font-style:      normal;
+  font-weight:      700;
+  src:      local('Noto Serif Bold'), local('NotoSerif-Bold'), url(https://fonts.gstatic.com/s/notoserif/v4/lJAvZoKA5NttpPc9yc6lPfEr6Hm6RMS0v1dtXsGir4g.ttf) format('truetype');
+}
+/*
+ * Definitions of var(--jp-sans-serif)
+ */
+:root {
+  --font-system:      -apple-system, system;
+  --font-yu-gothic:   '游ゴシック', 'Yu Gothic', YuGothic;
+  --font-apple-sans:  'Helvetica Neue',
+                      'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3';
+  --font-google-sans: 'Noto Sans CJK JP', 'Noto Sans Japanese';
+  --jp-sans-serif:      -apple-system, system,
+                      '游ゴシック', 'Yu Gothic', YuGothic,
+                      'Helvetica Neue',
+                      'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3',
+                      'Noto Sans CJK JP', 'Noto Sans Japanese',
+                      sans-serif;
+  --jp-sans-serif:    var(--font-system),
+                      var(--font-yu-gothic),
+                      var(--font-apple-sans),
+                      var(--font-google-sans),
+                      sans-serif;
+}
+/*
+ * Definitions of var(--jp-serif)
+ */
+:root {
+  --font-yu-mincho:     '游明朝', 'Yu Mincho', YuMincho;
+  --font-apple-serif:   Garamond,
+                        'ヒラギノ明朝 ProN W3' , 'Hiragino Mincho ProN', 'HiraMinProN-W3';
+  --font-google-serif:  'Noto Serif';
+  --jp-serif:      '游明朝', 'Yu Mincho', YuMincho,
+                        Garamond,
+                        'ヒラギノ明朝 ProN W3' , 'Hiragino Mincho ProN', 'HiraMinProN-W3',
+                        'Noto Serif',
+                        serif;
+  --jp-serif:           var(--font-yu-mincho),
+                        var(--font-apple-serif),
+                        var(--font-google-serif),
+                        serif;
+}
+/*
+ * Definitions of var(--jp-monospace)
+ */
+:root {
+  --font-apple-mono:  Monaco, Osaka-Mono;
+  --font-google-mono: 'Noto Sans Mono CJK JP', 'Noto Sans Mono Japanese';
+  --jp-monospace:      Monaco, Osaka-Mono,
+                      'Noto Sans Mono CJK JP', 'Noto Sans Mono Japanese',
+                      monospace;
+  --jp-monospace:     var(--font-apple-mono),
+                      var(--font-google-mono),
+                      monospace;
+}
+html {
+  font-weight:    400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing:   antialiased;
+  -moz-osx-font-smoothing:  grayscale;
+}
+.jp-font--sans-serif,
+[data-jp-fonts='sans-serif'] {
+  font-family:      -apple-system, system,
+                      '游ゴシック', 'Yu Gothic', YuGothic,
+                      'Helvetica Neue',
+                      'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3',
+                      'Noto Sans CJK JP', 'Noto Sans Japanese',
+                      sans-serif;
+  font-family: var(--jp-sans-serif);
+}
+.jp-font--serif,
+[data-jp-fonts='serif'] {
+  font-family:      '游明朝', 'Yu Mincho', YuMincho,
+                        Garamond,
+                        'ヒラギノ明朝 ProN W3' , 'Hiragino Mincho ProN', 'HiraMinProN-W3',
+                        'Noto Serif',
+                        serif;
+  font-family: var(--jp-serif);
+}
+.jp-font--monospace,
+[data-jp-fonts='monospace'] {
+  font-family:      Monaco, Osaka-Mono,
+                      'Noto Sans Mono CJK JP', 'Noto Sans Mono Japanese',
+                      monospace;
+  font-family: var(--jp-monospace);
 }
