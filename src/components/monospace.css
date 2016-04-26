@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+/*
+ * Noto Sans Mono
+ * https://www.google.com/get/noto/
+ */
+@font-face {
+  font-family:  'Noto Sans Mono Japanese';
+  font-style:   normal;
+  font-weight:  400;
+  src:          local('Noto Sans Mono CJK JP'),
+                local('Noto Sans Mono Japanese'),
+                url('../assets/NotoSansMonoCJKjp-Regular.otf');
+}
+@font-face {
+  font-family:  'Noto Sans Mono Japanese';
+  font-style:   normal;
+  font-weight:  700;
+  src:          local('Noto Sans Mono CJK JP'),
+                local('Noto Sans Mono Japanese'),
+                url('../assets/NotoSansMonoCJKjp-Bold.otf');
+}
+
+/*
+ * Definitions of var(--jp-monospace)
+ */
+ :root {
+  --font-apple-mono:  Monaco, Osaka-Mono;
+  --font-google-mono: 'Noto Sans Mono Japanese';
+  --jp-monospace:     var(--font-apple-mono),
+                      var(--font-google-mono),
+                      monospace;
+}

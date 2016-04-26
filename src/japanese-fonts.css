@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+@import './components/sans-serif';
+@import './components/serif';
+@import './components/monospace';
+
+html {
+  font-weight:    400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing:   antialiased;
+  -moz-osx-font-smoothing:  grayscale;
+}
+
+.jp-font--sans-serif,
+[data-jp-fonts='sans-serif'] {
+  font-family: var(--jp-sans-serif);
+}
+
+.jp-font--serif,
+[data-jp-fonts='serif'] {
+  font-family: var(--jp-serif);
+}
+
+.jp-font--monospace,
+[data-jp-fonts='monospace'] {
+  font-family: var(--jp-monospace);
+}

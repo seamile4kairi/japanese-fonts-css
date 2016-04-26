@@ -1,0 +1,45 @@
+{
+  "name": "japanese-fonts-css",
+  "version": "0.0.1",
+  "description": "The CSS configurations for Japanese device/web fonts",
+  "author": "Kairi",
+  "license": "MIT",
+  "main": "dist/japanese-fonts.css",
+  "style": "dist/japanese-fonts.css",
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "npm run lint",
+    "posttest": "npm run watch & npm run serve",
+    "build": "postcss -c postcss.config.js",
+    "postbuild": "cssnano dist/japanese-fonts.css dist/japanese-fonts.min.css",
+    "lint": "stylelint dist/japanese-fonts.css",
+    "serve": "browser-sync start -s 'dist' -f 'dist/*' --open external",
+    "watch": "watch 'npm run build && npm run lint' src"
+  },
+  "keywords": [
+    "css",
+    "font",
+    "typography",
+    "Japan",
+    "Japanese"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "cssnano-cli": "^1.0.3",
+    "postcss-cli": "^2.5.2",
+    "postcss-copy": "^4.0.2",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-import": "^8.1.0",
+    "postcss-import-url": "^1.0.0",
+    "postcss-reporter": "^1.3.3",
+    "stylelint": "^6.1.1",
+    "stylelint-config-standard": "^6.0.0",
+    "watch": "^0.17.1"
+  },
+  "stylelint": {
+    "rules": {
+      "font-family-name-quotes": "single-where-recommended",
+      "font-weight-notation": "numeric"
+    }
+  }
+}
