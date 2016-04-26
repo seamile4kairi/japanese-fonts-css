@@ -7,12 +7,14 @@
   "main": "dist/japanese-fonts.css",
   "style": "dist/japanese-fonts.css",
   "scripts": {
-    "build": "postcss -c postcss.config.js",
     "pretest": "npm run build",
-    "test": "stylelint dist/japanese-fonts.css",
+    "test": "npm run lint",
+    "posttest": "npm run watch & npm run serve",
+    "build": "postcss -c postcss.config.js",
+    "postbuild": "cssnano dist/japanese-fonts.css dist/japanese-fonts.min.css",
+    "lint": "stylelint dist/japanese-fonts.css",
     "serve": "browser-sync start -s 'dist' -f 'dist/*' --open external",
-    "prewatch": "npm run build",
-    "watch": "watch 'npm run build' src & npm run serve"
+    "watch": "watch 'npm run build && npm run lint' src"
   },
   "keywords": [
     "css",
@@ -23,7 +25,7 @@
   ],
   "devDependencies": {
     "browser-sync": "^2.12.3",
-    "cssnano": "^3.5.2",
+    "cssnano-cli": "^1.0.3",
     "postcss-cli": "^2.5.2",
     "postcss-custom-properties": "^5.0.1",
     "postcss-import": "^8.1.0",
