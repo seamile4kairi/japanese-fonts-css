@@ -2,7 +2,22 @@
   "name": "japanese-fonts-css",
   "version": "0.0.1",
   "description": "The CSS configurations for Japanese device/web fonts",
-  "author": "Kairi",
+  "keywords": [
+    "css",
+    "font",
+    "typography",
+    "Japan",
+    "Japanese"
+  ],
+  "author": "Kairi <seamile.rivercape@gmail.com> (http://kairi.me/portfolio/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seamile4kairi/japanese-fonts-css"
+  },
+  "bugs": {
+    "url": "https://github.com/seamile4kairi/japanese-fonts-css/issues",
+    "email": "seamile.rivercape@gmail.com"
+  },
   "license": "MIT",
   "main": "dist/japanese-fonts.css",
   "style": "dist/japanese-fonts.css",
@@ -16,13 +31,6 @@
     "serve": "browser-sync start -s 'dist' -f 'dist/*' --open external",
     "watch": "watch 'npm run build && npm run lint' src"
   },
-  "keywords": [
-    "css",
-    "font",
-    "typography",
-    "Japan",
-    "Japanese"
-  ],
   "devDependencies": {
     "browser-sync": "^2.12.3",
     "cssnano-cli": "^1.0.3",
