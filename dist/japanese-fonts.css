@@ -120,15 +120,7 @@
   font-weight:  400;
   src:          local('Noto Sans Mono CJK JP'),
                 local('Noto Sans Mono Japanese'),
-                url('../ea57162af40c2b7d.otf');
-}
-@font-face {
-  font-family:  'Noto Sans Mono Japanese';
-  font-style:   normal;
-  font-weight:  700;
-  src:          local('Noto Sans Mono CJK JP'),
-                local('Noto Sans Mono Japanese'),
-                url('../8526793e5ddac310.otf');
+                url('assets/ea57162af40c2b7d.otf');
 }
 /*
  * Definitions of var(--jp-monospace)
