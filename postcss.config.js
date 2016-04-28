@@ -14,12 +14,12 @@ module.exports = {
   'postcss-import': {
     plugins: [
       require('postcss-copy')({
-        src:  './src',
+        src:  './dist',
         dest: './dist',
-        template(file) {
-          return `assets/${file.hash}.${file.ext}`;
+        template: (file) => {
+          return `assets/${file.name}.${file.ext}`;
         },
-        relativePath(dir, file, result, opts) {
+        relativePath: (dir, file, result, opts) => {
           return opts.dest;
         }
       }),
