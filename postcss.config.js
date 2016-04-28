@@ -15,7 +15,13 @@ module.exports = {
     plugins: [
       require('postcss-copy')({
         src:  './src',
-        dest: './dist/assets'
+        dest: './dist',
+        template(file) {
+          return `assets/${file.hash}.${file.ext}`;
+        },
+        relativePath(dir, file, result, opts) {
+          return opts.dest;
+        }
       }),
       require('stylelint')
     ]
