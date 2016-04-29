@@ -22,9 +22,11 @@
   "main": "dist/japanese-fonts.css",
   "style": "dist/japanese-fonts.css",
   "scripts": {
+    "prepublish": "npm test",
     "pretest": "npm run build",
     "test": "npm run lint",
-    "posttest": "npm run watch & npm run serve",
+    "start": "npm test",
+    "poststart": "npm run watch & npm run serve",
     "build": "postcss -c postcss.config.js",
     "postbuild": "cssnano dist/japanese-fonts.css dist/japanese-fonts.min.css",
     "lint": "stylelint dist/japanese-fonts.css",
