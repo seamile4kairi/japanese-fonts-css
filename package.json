@@ -1,21 +1,7 @@
 {
   "name": "japanese-fonts-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The CSS configurations for Japanese device/web fonts",
-  "author": "Kairi",
-  "license": "MIT",
-  "main": "dist/japanese-fonts.css",
-  "style": "dist/japanese-fonts.css",
-  "scripts": {
-    "pretest": "npm run build",
-    "test": "npm run lint",
-    "posttest": "npm run watch & npm run serve",
-    "build": "postcss -c postcss.config.js",
-    "postbuild": "cssnano dist/japanese-fonts.css dist/japanese-fonts.min.css",
-    "lint": "stylelint dist/japanese-fonts.css",
-    "serve": "browser-sync start -s 'dist' -f 'dist/*' --open external",
-    "watch": "watch 'npm run build && npm run lint' src"
-  },
   "keywords": [
     "css",
     "font",
@@ -23,6 +9,30 @@
     "Japan",
     "Japanese"
   ],
+  "author": "Kairi <seamile.rivercape@gmail.com> (http://kairi.me/portfolio/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seamile4kairi/japanese-fonts-css"
+  },
+  "bugs": {
+    "url": "https://github.com/seamile4kairi/japanese-fonts-css/issues",
+    "email": "seamile.rivercape@gmail.com"
+  },
+  "license": "MIT",
+  "main": "dist/japanese-fonts.css",
+  "style": "dist/japanese-fonts.css",
+  "scripts": {
+    "prepublish": "npm test",
+    "pretest": "npm run build",
+    "test": "npm run lint",
+    "start": "npm test",
+    "poststart": "npm run watch & npm run serve",
+    "build": "postcss -c postcss.config.js",
+    "postbuild": "cssnano dist/japanese-fonts.css dist/japanese-fonts.min.css",
+    "lint": "stylelint dist/japanese-fonts.css",
+    "serve": "browser-sync start -s 'dist' -f 'dist/*' --open external",
+    "watch": "watch 'npm run build && npm run lint' src"
+  },
   "devDependencies": {
     "browser-sync": "^2.12.3",
     "cssnano-cli": "^1.0.3",
