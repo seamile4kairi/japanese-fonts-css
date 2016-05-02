@@ -11,21 +11,6 @@ module.exports = {
     'autoprefixer',
     'postcss-reporter'
   ],
-  'postcss-import': {
-    plugins: [
-      require('postcss-copy')({
-        src:  './dist',
-        dest: './dist',
-        template: (file) => {
-          return `assets/${file.name}.${file.ext}`;
-        },
-        relativePath: (dir, file, result, opts) => {
-          return opts.dest;
-        }
-      }),
-      require('stylelint')
-    ]
-  },
   'postcss-custom-properties': {
     preserve: true
   },
