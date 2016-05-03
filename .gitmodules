@@ -1,4 +1,4 @@
-[submodule "dist/assets/noto-sans-cjk-jp-min"]
-	path = dist/assets/noto-sans-cjk-jp-min
-[submodule "dist/assets/noto-sans-cjk-jp-min"]
+[submodule "src/assets/noto-sans-cjk-jp-min"]
+	path = src/assets/noto-sans-cjk-jp-min
+[submodule "src/assets/noto-sans-cjk-jp-min"]
 	url = https://github.com/hirofumii/Noto-Sans-CJK-JP.min.git
