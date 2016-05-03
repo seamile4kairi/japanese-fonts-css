@@ -12,16 +12,16 @@ html {
 }
 
 .jp-font--sans-serif,
-[data-jp-fonts='sans-serif'] {
+[data-jp-font='sans-serif'] {
   font-family: var(--jp-sans-serif);
 }
 
 .jp-font--serif,
-[data-jp-fonts='serif'] {
+[data-jp-font='serif'] {
   font-family: var(--jp-serif);
 }
 
 .jp-font--monospace,
-[data-jp-fonts='monospace'] {
+[data-jp-font='monospace'] {
   font-family: var(--jp-monospace);
 }
