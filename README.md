@@ -39,12 +39,14 @@ Then, import on your CSS file.
 japanese-fonts-css
 |- dist
 |   |- assets
-|   |   `- noto-sans-cjk-jp-min # Subset of the Noto Sans CJK JP for the size down.
-|   |                           # (Git submodule / Only using Noto Sans Mono Japanse)
+|   |   `- ...                  # Copied assets
 |   |- index.html               # Test file for CSS rendering
 |   |- japanese-fonts.css       # Generated CSS file (non-minimized)
 |   `- japanese-fonts.min.css   # Generated CSS file (minimized)
 |- src                          # Directory of source files
+|   |- assets
+|   |   `- noto-sans-cjk-jp-min # Subset of the Noto Sans CJK JP for the size down.
+|   |                           # (Git submodule / Only using Noto Sans Mono Japanse)
 |   |- components
 |   `- japanese-fonts.css
 |- postcss.config.js            # Configurations to generate dist/japanese-fonts.css
