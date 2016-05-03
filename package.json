@@ -1,6 +1,6 @@
 {
   "name": "japanese-fonts-css",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The CSS configurations for Japanese device/web fonts",
   "keywords": [
     "css",
@@ -37,6 +37,7 @@
     "browser-sync": "^2.12.3",
     "cssnano-cli": "^1.0.3",
     "postcss-cli": "^2.5.2",
+    "postcss-copy": "^4.0.2",
     "postcss-custom-properties": "^5.0.1",
     "postcss-import": "^8.1.0",
     "postcss-import-url": "^1.0.0",
