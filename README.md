@@ -120,3 +120,8 @@ Or you can also redifne custom properties as you like:
 <p data-jp-font="serif">明朝体を指定</p>
 <p data-jp-font="monospace">等幅フォントを指定</p>
 ```
+
+License
+-------
+
+MIT
