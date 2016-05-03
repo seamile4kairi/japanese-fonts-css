@@ -154,7 +154,7 @@ html {
   -moz-osx-font-smoothing:  grayscale;
 }
 .jp-font--sans-serif,
-[data-jp-fonts='sans-serif'] {
+[data-jp-font='sans-serif'] {
   font-family:      -apple-system, system,
                       '游ゴシック', 'Yu Gothic', YuGothic,
                       'Helvetica Neue',
@@ -164,7 +164,7 @@ html {
   font-family: var(--jp-sans-serif);
 }
 .jp-font--serif,
-[data-jp-fonts='serif'] {
+[data-jp-font='serif'] {
   font-family:      '游明朝', 'Yu Mincho', YuMincho,
                         Garamond,
                         'ヒラギノ明朝 ProN W3' , 'Hiragino Mincho ProN', 'HiraMinProN-W3',
@@ -173,7 +173,7 @@ html {
   font-family: var(--jp-serif);
 }
 .jp-font--monospace,
-[data-jp-fonts='monospace'] {
+[data-jp-font='monospace'] {
   font-family:      Monaco, Osaka-Mono,
                       'Noto Sans Mono Japanese',
                       monospace;
