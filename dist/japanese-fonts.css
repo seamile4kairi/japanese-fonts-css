@@ -202,6 +202,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   --font-apple-sans:  'Helvetica Neue',
                       'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3';
   --font-google-sans: 'Noto Sans CJK JP', 'Noto Sans Japanese';
+  --font-ms-sans:     'メイリオ', Meiryo;
   --jp-sans-serif:  -apple-system, system,
                       SFNSText,
                       '游ゴシック', 'Yu Gothic', YuGothic,
@@ -285,6 +286,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 :root {
   --font-apple-mono:  Monaco, Osaka-Mono;
   --font-google-mono: 'Noto Sans Mono Japanese';
+  --font-ms-mono:     'ＭＳ　ゴシック', 'MS Gothic';
   --jp-monospace:  Monaco, Osaka-Mono,
                       'Noto Sans Mono Japanese',
                       monospace;
