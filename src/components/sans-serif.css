@@ -14,6 +14,7 @@
   --font-apple-sans:  'Helvetica Neue',
                       'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3';
   --font-google-sans: 'Noto Sans CJK JP', 'Noto Sans Japanese';
+  --font-ms-sans:     'メイリオ', Meiryo;
   --jp-sans-serif:    var(--font-system),
                       var(--font-sf-text),
                       var(--font-yu-gothic),

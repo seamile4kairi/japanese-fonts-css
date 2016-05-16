@@ -8,6 +8,7 @@
  :root {
   --font-apple-mono:  Monaco, Osaka-Mono;
   --font-google-mono: 'Noto Sans Mono Japanese';
+  --font-ms-mono:     'ＭＳ　ゴシック', 'MS Gothic';
   --jp-monospace:     var(--font-apple-mono),
                       var(--font-google-mono),
                       monospace;
