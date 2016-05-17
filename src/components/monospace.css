@@ -6,6 +6,7 @@
 /*
  * Definitions of var(--jp-monospace)
  */
+
  :root {
   --font-apple-mono:  Monaco, Osaka-Mono;
   --font-google-mono: 'Roboto Mono', 'Noto Sans Mono Japanese';
