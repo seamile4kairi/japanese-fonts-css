@@ -94,14 +94,14 @@ Or you can also redifne custom properties as you like:
   - ``var(--font-system)``:       San Francisco
   - ``var(--font-yu-gothic)``:    游ゴシック
   - ``var(--font-apple-sans)``:   Helvetica Neue, ヒラギノ角ゴ
-  - ``var(--font-google-sans)``:  Noto Sans Japanese
+  - ``var(--font-google-sans)``:  Roboto, Noto Sans Japanese
 - ``var(--jp-serif)``: serif / 明朝体
   - ``var(--font-yu-mincho)``:    游明朝
   - ``var(--font-apple-serif)``:  Garamond, ヒラギノ明朝
   - ``var(--font-google-serif)``: Noto Serif
 - ``var(--jp-monospace)``: monospace / 等幅
   - ``var(--font-apple-mono)``:   Monaco, Osaka-Mono
-  - ``var(--font-google-mono)``:  Noto Sans Mono Japanese
+  - ``var(--font-google-mono)``:  Roboto Mono, Noto Sans Mono Japanese
 
 #### cf. About Custom Properties
 
