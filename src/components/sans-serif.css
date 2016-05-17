@@ -13,7 +13,7 @@
   --font-yu-gothic:   '游ゴシック', 'Yu Gothic', YuGothic;
   --font-apple-sans:  'Helvetica Neue',
                       'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3';
-  --font-google-sans: 'Noto Sans CJK JP', 'Noto Sans Japanese';
+  --font-google-sans: Roboto, 'Noto Sans CJK JP', 'Noto Sans Japanese';
   --font-ms-sans:     'メイリオ', Meiryo;
   --jp-sans-serif:    var(--font-system),
                       var(--font-sf-text),
