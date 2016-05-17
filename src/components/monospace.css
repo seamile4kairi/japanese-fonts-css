@@ -1,36 +1,15 @@
 @charset 'utf-8';
 
-/*
- * Noto Sans Mono
- * https://www.google.com/get/noto/
- */
-@font-face {
-  font-family:  'Noto Sans Mono Japanese';
-  font-style:   normal;
-  font-weight:  400;
-  src:          local('Noto Sans Mono CJK JP'),
-                local('Noto Sans Mono Japanese'),
-                url('../assets/noto-sans-cjk-jp-min/Fonts/Mono-Regular/NotoSansMonoCJKjp-Regular.min.woff2') format('woff2'),
-                url('../assets/noto-sans-cjk-jp-min/Fonts/Mono-Regular/NotoSansMonoCJKjp-Regular.min.woff') format('woff'),
-                url('../assets/noto-sans-cjk-jp-min/Fonts/Mono-Regular/NotoSansMonoCJKjp-Regular.min.ttf') format('truetype');
-}
-@font-face {
-  font-family:  'Noto Sans Mono Japanese';
-  font-style:   normal;
-  font-weight:  700;
-  src:          local('Noto Sans Mono CJK JP'),
-                local('Noto Sans Mono Japanese'),
-                url('../assets/noto-sans-cjk-jp-min/Fonts/Mono-Bold/NotoSansMonoCJKjp-Bold.min.woff2') format('woff2'),
-                url('../assets/noto-sans-cjk-jp-min/Fonts/Mono-Bold/NotoSansMonoCJKjp-Bold.min.woff') format('woff'),
-                url('../assets/noto-sans-cjk-jp-min/Fonts/Mono-Bold/NotoSansMonoCJKjp-Bold.min.ttf') format('truetype');
-}
+@import '../modules/noto-sans-mono-japanese';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
 
 /*
  * Definitions of var(--jp-monospace)
  */
  :root {
   --font-apple-mono:  Monaco, Osaka-Mono;
-  --font-google-mono: 'Noto Sans Mono Japanese';
+  --font-google-mono: 'Roboto Mono', 'Noto Sans Mono Japanese';
+  --font-ms-mono:     'ＭＳ　ゴシック', 'MS Gothic';
   --jp-monospace:     var(--font-apple-mono),
                       var(--font-google-mono),
                       monospace;

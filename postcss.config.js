@@ -5,7 +5,6 @@ module.exports = {
   dir:    'dist',
   use:    [
     'postcss-import',
-    'postcss-import-url',
     'postcss-custom-properties',
     'postcss-normalize-charset',
     'autoprefixer',
@@ -13,10 +12,11 @@ module.exports = {
   ],
   'postcss-import': {
     plugins: [
+      require('postcss-import-url'),
       require('postcss-copy')({
         src:  './src',
         dest: './dist',
-        template: (file) => {
+        template: file => {
           return `assets/${file.name}.${file.ext}`;
         },
         relativePath: (dir, file, result, opts) => {
