@@ -201,14 +201,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   --font-yu-gothic:   '游ゴシック', 'Yu Gothic', YuGothic;
   --font-apple-sans:  'Helvetica Neue',
                       'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3';
-  --font-google-sans: 'Noto Sans CJK JP', 'Noto Sans Japanese';
+  --font-google-sans: Roboto, 'Noto Sans CJK JP', 'Noto Sans Japanese';
   --font-ms-sans:     'メイリオ', Meiryo;
   --jp-sans-serif:  -apple-system, system,
                       SFNSText,
                       '游ゴシック', 'Yu Gothic', YuGothic,
                       'Helvetica Neue',
                       'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3',
-                      'Noto Sans CJK JP', 'Noto Sans Japanese',
+                      Roboto, 'Noto Sans CJK JP', 'Noto Sans Japanese',
                       sans-serif;
   --jp-sans-serif:    var(--font-system),
                       var(--font-sf-text),
@@ -279,16 +279,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 url('assets/NotoSansMonoCJKjp-Bold.min.ttf') format('truetype');
 }
 
+@font-face{
+  font-family:  'Roboto Mono';
+  font-style:  normal;
+  font-weight:  400;
+  src:  local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v4/hMqPNLsu_dywMa4C_DEpY50EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+
+@font-face{
+  font-family:  'Roboto Mono';
+  font-style:  normal;
+  font-weight:  700;
+  src:  local('Roboto Mono Bold'), local('RobotoMono-Bold'), url(https://fonts.gstatic.com/s/robotomono/v4/N4duVc9C58uwPiY8_59Fz5_TkvowlIOtbR7ePgFOpF4.ttf) format('truetype');
+}
+
 /*
  * Definitions of var(--jp-monospace)
  */
 
 :root {
   --font-apple-mono:  Monaco, Osaka-Mono;
-  --font-google-mono: 'Noto Sans Mono Japanese';
+  --font-google-mono: 'Roboto Mono', 'Noto Sans Mono Japanese';
   --font-ms-mono:     'ＭＳ　ゴシック', 'MS Gothic';
   --jp-monospace:  Monaco, Osaka-Mono,
-                      'Noto Sans Mono Japanese',
+                      'Roboto Mono', 'Noto Sans Mono Japanese',
                       monospace;
   --jp-monospace:     var(--font-apple-mono),
                       var(--font-google-mono),
@@ -309,7 +323,7 @@ html {
                       '游ゴシック', 'Yu Gothic', YuGothic,
                       'Helvetica Neue',
                       'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3',
-                      'Noto Sans CJK JP', 'Noto Sans Japanese',
+                      Roboto, 'Noto Sans CJK JP', 'Noto Sans Japanese',
                       sans-serif;
   font-family: var(--jp-sans-serif);
 }
@@ -327,7 +341,7 @@ html {
 .jp-font--monospace,
 [data-jp-font='monospace'] {
   font-family:  Monaco, Osaka-Mono,
-                      'Noto Sans Mono Japanese',
+                      'Roboto Mono', 'Noto Sans Mono Japanese',
                       monospace;
   font-family: var(--jp-monospace);
 }

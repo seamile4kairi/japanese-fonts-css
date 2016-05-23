@@ -6,6 +6,7 @@
 /*
  * Definitions of var(--jp-sans-serif)
  */
+
 :root {
   --font-system:      -apple-system, system;
   --font-sf-display:  SFNSDisplay;
