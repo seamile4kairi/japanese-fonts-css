@@ -94,34 +94,23 @@ Or you can also redifne custom properties as you like:
 #### Reserved Custom Properties
 
 - ``var(--jp-sans-serif)``: sans-serif / ゴシック体
-<<<<<<< HEAD
-  - ``var(--font-system)``:       San Francisco
-  - ``var(--font-yu-gothic)``:    游ゴシック
-  - ``var(--font-apple-sans)``:   Helvetica Neue, ヒラギノ角ゴ
-  - ``var(--font-google-sans)``:  Roboto, Noto Sans Japanese
-=======
   - ``var(--font-system)``:       Fonts defined by OS (= San Francisco on Apple's devices)
   - ``var(--font-sf-text)``:      San Francisco - Text
   - ``var(--font-yu-gothic)``:    游ゴシック (YuGothic)
   - ``var(--font-apple-sans)``:   Helvetica Neue, ヒラギノ角ゴ (Hiragino Kaku Gothic)
-  - ``var(--font-google-sans)``:  Noto Sans Japanese
+  - ``var(--font-google-sans)``:  Roboto, Noto Sans Japanese
   - NOT INCLUDED FONT-SETS
     - ``var(--font-sf-display)``: San Francisco - Display
     - ``var(--font-ms-sans)``:    メイリオ (Meiryo)
->>>>>>> v0.2.0
 - ``var(--jp-serif)``: serif / 明朝体
   - ``var(--font-yu-mincho)``:    游明朝 (YuMincho)
   - ``var(--font-apple-serif)``:  Garamond, ヒラギノ明朝 (Hiragino Mincho)
   - ``var(--font-google-serif)``: Noto Serif
 - ``var(--jp-monospace)``: monospace / 等幅
   - ``var(--font-apple-mono)``:   Monaco, Osaka-Mono
-<<<<<<< HEAD
-  - ``var(--font-google-mono)``:  Roboto Mono, Noto Sans Mono Japanese
-=======
   - ``var(--font-google-mono)``:  Noto Sans Mono Japanese
   - NOT INCLUDED FONT-SETS:
     - ``var(--font-ms-mono)``:    ＭＳゴシック (MS Gothic)
->>>>>>> v0.2.0
 
 #### cf. About Custom Properties
 
