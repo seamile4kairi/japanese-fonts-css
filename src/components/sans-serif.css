@@ -14,7 +14,6 @@
   --font-google-sans: Roboto, 'Noto Sans CJK JP', 'Noto Sans Japanese';
   --font-ms-sans:     'メイリオ', Meiryo;
   --jp-sans-serif:    var(--font-system),
-                      var(--font-sf-text),
                       var(--font-yu-gothic),
                       var(--font-apple-sans),
                       var(--font-google-sans),
