@@ -105,7 +105,7 @@ Or you can also redifne custom properties as you like:
 - ``var(--jp-serif)``: serif / 明朝体
   - ``var(--font-yu-mincho)``:    游明朝 (YuMincho)
   - ``var(--font-apple-serif)``:  Garamond, ヒラギノ明朝 (Hiragino Mincho)
-  - ``var(--font-google-serif)``: Noto Serif
+  - ``var(--font-google-serif)``: さわらび明朝
 - ``var(--jp-monospace)``: monospace / 等幅
   - ``var(--font-apple-mono)``:   Monaco, Osaka-Mono
   - ``var(--font-google-mono)``:  Noto Sans Mono Japanese
