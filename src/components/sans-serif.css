@@ -9,8 +9,6 @@
 
 :root {
   --font-system:      -apple-system, system;
-  --font-sf-display:  SFNSDisplay;
-  --font-sf-text:     SFNSText;
   --font-yu-gothic:   '游ゴシック', 'Yu Gothic', YuGothic;
   --font-apple-sans:  'Helvetica Neue',
                       'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W3';
