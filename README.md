@@ -9,7 +9,7 @@ Installation
 ### NPM
 
 ```shell
-$ npm i -S seamile4kairi/japanese-fonts-css
+$ npm i -S japanese-fonts-css
 # Recommend you to use along with PostCSS and postcss-import
 $ npm i -D postcss postcss-import
 ```
@@ -31,27 +31,6 @@ Then, import on your CSS file.
 ```html
 <!-- from HTML -->
 <link rel="stylesheet" href="dist/japanese-fonts.min.css" charset="utf-8">
-```
-
-### cf. Structure
-
-```
-japanese-fonts-css
-|- dist
-|   |- assets
-|   |   `- ...                  # Copied assets
-|   |- index.html               # Test file for CSS rendering
-|   |- japanese-fonts.css       # Generated CSS file (non-minimized)
-|   `- japanese-fonts.min.css   # Generated CSS file (minimized)
-|- src                          # Directory of source files
-|   |- assets
-|   |   `- noto-sans-cjk-jp-min # Subset of the Noto Sans CJK JP for the size down.
-|   |                           # (Git submodule / Only using Noto Sans Mono Japanse)
-|   |- components
-|   |- modules
-|   `- japanese-fonts.css
-|- postcss.config.js            # Configurations to generate dist/japanese-fonts.css
-`- other meta files...
 ```
 
 Usage
@@ -105,7 +84,7 @@ Or you can also redifne custom properties as you like:
 - ``var(--jp-serif)``: serif / 明朝体
   - ``var(--font-yu-mincho)``:    游明朝 (YuMincho)
   - ``var(--font-apple-serif)``:  Garamond, ヒラギノ明朝 (Hiragino Mincho)
-  - ``var(--font-google-serif)``: Noto Serif
+  - ``var(--font-google-serif)``: さわらび明朝
 - ``var(--jp-monospace)``: monospace / 等幅
   - ``var(--font-apple-mono)``:   Monaco, Osaka-Mono
   - ``var(--font-google-mono)``:  Noto Sans Mono Japanese
