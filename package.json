@@ -1,7 +1,7 @@
 {
   "name": "japanese-fonts-css",
-  "version": "0.2.0",
-  "description": "The CSS configurations for Japanese device/web fonts",
+  "version": "0.3.0",
+  "description": "The CSS definitions for Japanese device/web fonts",
   "keywords": [
     "css",
     "font",
