@@ -48,7 +48,7 @@
   },
   "stylelint": {
     "rules": {
-      "font-family-name-quotes": "single-where-recommended",
+      "font-family-name-quotes": "always-where-recommended",
       "font-weight-notation": "numeric"
     }
   }
